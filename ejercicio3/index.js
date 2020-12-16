@@ -11,4 +11,3 @@ console.log('Resta', data[1]-data[2]);
 console.log('Multiplicación', data[1]*data[2]);
 console.log('División', data[1]/data[2]);
 console.log('Cociente', data[1]%data[2]);
-  
