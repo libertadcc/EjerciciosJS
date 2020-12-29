@@ -2,8 +2,8 @@
 
 function checkNumber (number) {
   if (number % 2 === 0) {
-    return true;
+    return 'Número par';
   } else {
-    return false;
+    return 'Número impar';
   }
 };
