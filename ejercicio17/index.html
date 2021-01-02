@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 17</title>
+  </head>
+  <body>
+    <h1>Cálculo de la factura</h1>
+    <p>Utilizando las clases de JavaScript, haz un pequeño programa que calcule el precio total de una factura. Para ello: </p>
+    <ul>
+      <li>Crea una clase Factura que reciba el nombre del cliente, un array de elementos y una pseudoclase información con las propiedades: baseImponible, iva, total y forma de pago.</li>
+      <li>La clase Cliente recibirá el nombre, dirección, teléfono y nif.</li>
+      <li>La clase Elemento recibirá la descripción, cantidad y precio.</li>
+    </ul>
+    <p>Una vez que tenemos las clases deberemos hacer las funciones que van a hacer los cálculos y mostrarlos en la pantalla: </p>
+    <ul>
+      <li>Cálculo del total: recorreremos los elementos del array de elementos calculando la base imponible de la factura y el total. Esa información la guardaremos en el total de la pseudoclase información.</li>
+      <ul>
+        <li>Base imponible = cantidad * precio</li>
+        <li>Total = base imponible * (1+ (100/16))</li>
+      </ul>
+      <li>Mostrar en pantalla. Ejecutaremos la función anterior y mostraremos el resultado por pantalla.</li>
+    </ul>
+    <script src="main.js"></script>
+  </body>
+</html>
