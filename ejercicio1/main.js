@@ -17,5 +17,3 @@ console.log(volumen2, 'cm3');
 
 const area2 = 2*(lado * base + lado * ancho + base * ancho);
 console.log(area2, 'cm2');
-
-console.log(20%3)
