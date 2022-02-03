@@ -1,5 +1,3 @@
-'use strict';
-
 const data = ['hola', 2, 5, 'adios'];
 
 // Determina cuál de las dos cadenas que hay en el array es mayor.

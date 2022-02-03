@@ -1,5 +1,3 @@
-'use strict';
-
 const liber = {
   day: 5,
   month: 'Diciembre'
