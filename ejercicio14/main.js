@@ -6,11 +6,41 @@ const users = [
   {username: 'sergio58', age: 26, premium: true}
 ];
 
-users.map(user => {
+
+users.map(function(user) {
   if (user.premium) {
-    console.log(`${user.username} tiene cuenta premium`)
+    console.log('El usuario ' + user.username + ' es premium');
   }
 });
 
-const isNotPremium = users.filter(user => !user.premium);
-console.log(isNotPremium);
+let usersNoPrem = users.filter(function(objeto) {
+  return !objeto.premium;
+});
+
+console.log('userNoPrem', usersNoPrem);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// users.map(user => {
+//   if (user.premium) {
+//     console.log(`${user.username} tiene cuenta premium`)
+//   }
+// });
+
+// const isNotPremium = users.filter(user => !user.premium);
+// console.log(isNotPremium);
+
+
+
+

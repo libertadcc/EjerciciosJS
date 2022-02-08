@@ -1,8 +1,10 @@
 let n = prompt('Dime un número');
 
-let number = 1;
+let factorial = 1;
+
 for(i=1; i<=n; i++) {
-    number = number * i;
+    factorial = factorial * i;
+    console.log(`i:${i} - factorial:${factorial}`)
 }
 
-console.log(`Tu número era el ${n} y su factorial es el ${number}`);
+console.log(`Tu número era el ${n} y su factorial es ${factorial}`);

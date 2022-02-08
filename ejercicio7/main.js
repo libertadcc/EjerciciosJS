@@ -5,3 +5,15 @@ function checkNumber (number) {
     return 'Número impar';
   }
 };
+
+
+function comprueba(numero) {
+  if (numero%2 == 0) {
+    console.log('Número par');
+  } else {
+    console.log('Número impar');
+  }
+};
+
+let value = comprueba(28);
+console.log('value', value)
