@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Selecciona una ciudad:</p>
+    <select id="selCity" onchange="getCity()">
+        <option value="">Ciudad</option>
+        <option value="Almería">Almería</option>
+        <option value="Madrid">Madrid</option>
+        <option value="Lugo">Lugo</option>
+        <option value="Valencia">Valencia</option>
+    </select>
+    <p id="result"></p>
+    <script>
+        function getCity() {
+            var currentCity = document.getElementById("selCity").value;
+            if (currentCity != ''){
+                document.getElementById("result").innerHTML = "La ciudad seleccionada es: " + currentCity;
+            } else {
+                document.getElementById("result").innerHTML = '';
+            }
+        }
+    </script>
+</body>
+
+</html>

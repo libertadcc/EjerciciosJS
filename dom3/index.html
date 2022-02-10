@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Seguir leyendo</title>
+    <style type="text/css">
+        #more {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae nemo reiciendis perferendis quia quibusdam aspernatur quos rem porro. 
+        <span id="dots">...</span>
+
+        <p id="more">
+            Error consequuntur atque voluptatem odit ducimus, iusto recusandae sed. Praesentium, ullam pariatur!
+        </p>
+    </p>
+
+    <a href="#" onclick="myFunction()" id="myBtn">Read more</a>
+    <script type="text/javascript">
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
