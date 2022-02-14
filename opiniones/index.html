@@ -8,21 +8,11 @@
 </head>
 <body>
     <p>Escribe tu opinión</p>
-    <textarea id="myInput" rows="4" cols="50" value="Escribe tu opinión"> </textarea>
+    <textarea id="myInput" rows="4" cols="50" value="Escribe tu opinión"
+    onkeyup="keyEnter(event)"> </textarea>
     <br>
     <button id="myBtn" onclick="showresult()">Button</button>
     <p id="result"></p>
-    <script>
-    var input = document.getElementById("myInput");
-    input.addEventListener("keyup", function(event) {
-      if (event.keyCode === 13) {
-       document.getElementById("myBtn").click();
-      }
-    });
-
-    function showresult() {
-        document.getElementById('result').innerHTML = '<p><b>El usuario ha dicho que</b></p>' + document.getElementById('myInput').value;
-    }
-    </script>
+    <script src="map.js"></script>
 </body>
 </html>
